@@ -1,0 +1,22 @@
+<h1 class="text-center">Creador de firma Digital</h1>
+<div style="margin: auto;" class="signature-pad">
+  <div class="signature-pad--body">
+    <canvas #sPad width="850" height="300" style="touch-action: none;"></canvas>
+  </div>
+</div>
+<br>
+<br>
+<section class="container" style="padding-bottom: 15px;">
+    <div class="row">
+      <div class="col-6">
+        <button class="btn btn-block btn-outline-danger" (click)="clear()">Limpiar</button>
+        <button class="btn btn-block btn-outline-warning" (click)="undo()">Deshacer</button>
+        <button class="btn btn-block btn-outline-info" (click)="changeColor()">Cambiar Color</button>
+      </div>
+      <div class="col-6">
+        <button class="btn btn-block btn-success" (click)="savePNG()">Exportar PNG</button>
+        <button class="btn btn-block btn-primary" (click)="saveJPG()">Exportar JPG</button>
+        <button class="btn btn-block btn-secondary" (click)="saveSVG()">Exportar SVG</button>
+      </div>
+    </div>
+</section>
